@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Player Testing renders correctly Addplayer 1`] = `
+<div>
+  <form
+    id="form-addplayer"
+    onSubmit={[Function]}
+  >
+    <div
+      class="form-group"
+    >
+      <label
+        for="playername"
+      >
+        Player Name
+      </label>
+      <input
+        class="form-control"
+        id="playername"
+        onChange={[Function]}
+        placeholder="Enter Player Name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      class="form-group"
+    >
+      <label
+        for="country"
+      >
+        Country
+      </label>
+      <input
+        class="form-control"
+        id="country"
+        onChange={[Function]}
+        placeholder="Enter Country Name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      class="form-group"
+    >
+      <label
+        for="matchesPlayed"
+      >
+        Total Matches Played
+      </label>
+      <input
+        class="form-control"
+        id="matchesPlayed"
+        onChange={[Function]}
+        placeholder="Enter Total Matches Played"
+        required={true}
+        type="text"
+      />
+    </div>
+    <button
+      class="btn btn-primary"
+      type="submit"
+    >
+      Add Player
+    </button>
+  </form>
+</div>
+`;
