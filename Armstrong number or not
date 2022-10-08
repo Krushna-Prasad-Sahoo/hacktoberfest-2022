@@ -1,0 +1,24 @@
+A positive integer of n digits is called an Armstrong number of order n (order is number of digits) 
+
+153 is an Armstrong number.
+1*1*1 + 5*5*5 + 3*3*3 = 153
+Input : 120
+Output : No
+120 is not a Armstrong number.
+1*1*1 + 2*2*2 + 0*0*0 = 9
+Input : 1253
+Output : No
+1253 is not a Armstrong Number
+
+
+n = 153 ; temp = n; p = 0
+ 
+# the sum of individual digits
+while (n >0):
+  rem = n % 10;
+  p = (p) + (rem * rem * rem)
+  n = n // 10
+if temp == p:
+  print("armstrong")
+else:
+  print("not a armstrong number")
