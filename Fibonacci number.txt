@@ -1,0 +1,138 @@
+ FIBONACCI NUMBERS
+
+The Fibonacci numbers are the numbers in the following integer sequence.
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
+
+In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation
+
+Fn = Fn-1 + Fn-2
+with seed values 
+
+F0 = 0 and F1 = 1.
+............................................... C PROGRAM.......................................................................
+
+// C program to check if x is a perfect square
+#include <math.h>
+#include <stdbool.h>
+#include <stdio.h>
+ 
+// A utility function that returns true if x is perfect
+// square
+bool isPerfectSquare(int x)
+{
+    int s = sqrt(x);
+    return (s * s == x);
+}
+ 
+// Returns true if n is a Fibonacci Number, else false
+bool isFibonacci(int n)
+{
+    // n is Fibonacci if one of 5*n*n + 4 or 5*n*n - 4 or
+    // both is a perfect square
+    return isPerfectSquare(5 * n * n + 4)
+           || isPerfectSquare(5 * n * n - 4);
+}
+ 
+// A utility function to test above functions
+int main()
+{
+    for (int i = 1; i <= 10; i++) {
+        if (isFibonacci(i))
+            printf("%d is a Fibonacci Number \n", i);
+        else
+            printf("%d is a not Fibonacci Number \n", i);
+    }
+    return 0;
+}
+
+
+................................................C++ PROGRAM......................................................
+
+
+// C++ program to check if x is a perfect square
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// A utility function that returns true if x is perfect
+// square
+bool isPerfectSquare(int x)
+{
+    int s = sqrt(x);
+    return (s * s == x);
+}
+ 
+// Returns true if n is a Fibonacci Number, else false
+bool isFibonacci(int n)
+{
+    // n is Fibonacci if one of 5*n*n + 4 or 5*n*n - 4 or
+    // both is a perfect square
+    return isPerfectSquare(5 * n * n + 4)
+           || isPerfectSquare(5 * n * n - 4);
+}
+ 
+// A utility function to test above functions
+int main()
+{
+    for (int i = 1; i <= 10; i++)
+        isFibonacci(i)
+            ? cout << i << " is a Fibonacci Number \n"
+            : cout << i << " is a not Fibonacci Number \n";
+    return 0;
+}
+
+..............................................PYTHON PROGRAM.........................................................
+
+# python program to check if x is a perfect square
+import math
+ 
+# A utility function that returns true if x is perfect square
+def isPerfectSquare(x):
+    s = int(math.sqrt(x))
+    return s*s == x
+ 
+# Returns true if n is a Fibonacci Number, else false
+def isFibonacci(n):
+ 
+    # n is Fibonacci if one of 5*n*n + 4 or 5*n*n - 4 or both
+    # is a perfect square
+    return isPerfectSquare(5*n*n + 4) or isPerfectSquare(5*n*n - 4)
+    
+# A utility function to test above functions
+for i in range(1,11):
+     if (isFibonacci(i) == True):
+         print i,"is a Fibonacci Number"
+     else:
+         print i,"is a not Fibonacci Number "
+
+
+.......................................................JAVA PROGRAM.....................................................
+
+
+// Java program to check if x is a perfect square
+ 
+class Hactoberfest
+{
+    // A utility method that returns true if x is perfect square
+    static  boolean isPerfectSquare(int x)
+    {
+        int s = (int) Math.sqrt(x);
+        return (s*s == x);
+    }
+      
+    // Returns true if n is a Fibonacci Number, else false
+    static boolean isFibonacci(int n)
+    {
+        // n is Fibonacci if one of 5*n*n + 4 or 5*n*n - 4 or both
+        // is a perfect square
+        return isPerfectSquare(5*n*n + 4) ||
+               isPerfectSquare(5*n*n - 4);
+    }
+ 
+    // Driver method
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <= 10; i++)
+             System.out.println(isFibonacci(i) ?  i +  " is a Fibonacci Number" :
+                                                  i + " is a not Fibonacci Number");
+    }
+}
