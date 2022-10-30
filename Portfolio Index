@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="img1.jpg">
+            <h3 class="name">P.T. Thilini Anuradha</h3>
+            <p class="post">Software Engineer</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <h3>Hi there !</h3>
+        <h1>I AM <span>Thilini Anuradha</span></h1>
+        <p>
+            Am a very focused person with strong communication skills, team spirit, and B.Sc. Special Degree in Computing and Information Systems (Reading) who works currently Software Engineer and am a quick learner and always willing to learn new things with an open mind.
+        </p>
+        <a href="#about"><button class="btn">About me<i class="fas fa-user"></i></button></a>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span> me</h1>
+        <div class="row">
+            <div class="info">
+                <h3><span>name</span>Thilini Anuradha</h3>
+                <h3><span>age</span>24</h3>
+                <h3><span>Qualification</span>Graduate</h3>
+                <h3><span>Post</span>Software Engineer</h3>
+                <h3><span>Language</span>English</h3>
+                <a href="#"><button class="btn">View CV<i class="fas fa-view"></i></button></a>
+            </div>
+            <div class="counter">
+                <div class="box">
+                    <span>2+</span>
+                    <h3>Years of experience</h3>
+                </div>
+                <div class="box">
+                    <span>50+</span>
+                    <h3>projects completed</h3>
+                </div>
+                <div class="box">
+                    <span>100+</span>
+                    <h3>customers</h3>
+                </div>
+               
+            </div>
+        </div>
+
+    </section>
+    <section class="education" id="education">
+        <h1 class="heading"><span>Education</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2003-2007</span>
+                <h3>Walisinghe Harishchandra M.V.</h3>
+                <p>I got my preliminary Education from Anuradhapura Walisinghe Harishchandra M.V.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2008-2016</span>
+                <h3>Central College | Anuradhapura</h3>
+                <p>I got my secondary Education from Anuradhapura Central College</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2019-present</span>
+                <h3>Sabaragamuwa University of Sri Lanka</h3>
+                <p>I got my Bsc.(Hons) Information Systems degree from Sabaragamuwa University of Sri Lanka</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="heading"><span>My </span> Projects</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image2.png" alt="">
+            </div>
+            <div class="box">
+                <img src="image3.png" alt="">
+            </div>
+            <div class="box">
+                <img src="image4.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="image5.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="image6.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="image7.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact </span> me !</h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">Contact Info</h3>
+                <div class="info">
+                    <h3><i class="fas fa-envelope"></i>anuradhathilini71@gmail.com</h3>
+                    <h3><i class="fas fa-phone"></i>+942 1234 5678</h3>
+                    <h3><i class="fas fa-phone"></i>+941 2589 4598</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i>Colombo, SriLanka</h3>
+                </div>
+            </div>
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn">Send<i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
